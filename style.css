@@ -1,0 +1,72 @@
+body {
+  font-family: "Kanit", sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.register-card {
+  background: white;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #2b7a78;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  height: 80px;
+  grid-column: span 2;
+}
+
+.form-buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #3d9970;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+button:hover {
+  background: #2e7d59;
+}
+
+@media (max-width: 600px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
