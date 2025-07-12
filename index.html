@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>สมัครสมาชิก</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="register-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Arch_Linux_logo.svg/240px-Arch_Linux_logo.svg.png" alt="logo" class="logo">
+
+    <h2>ฟอร์มสมัครสมาชิก</h2>
+
+    <div class="form-grid">
+      <input type="text" id="memberId" placeholder="รหัสสมาชิก">
+      <input type="text" id="lineUid" placeholder="Line UID">
+      <input type="text" id="name" placeholder="ชื่อ - นามสกุล">
+      <input type="date" id="dob" placeholder="วันเกิด">
+      <input type="text" id="phone" placeholder="เบอร์โทรศัพท์">
+      <select id="type">
+        <option>มาตรฐาน</option>
+        <option>VIP</option>
+        <option>ทดลอง</option>
+      </select>
+      <input type="email" id="email" placeholder="อีเมล">
+      <textarea id="note" placeholder="หมายเหตุ"></textarea>
+    </div>
+
+    <div class="form-buttons">
+      <button onclick="submitMember()">✅ บันทึก</button>
+      <button onclick="window.location.href='/'">❌ ยกเลิก</button>
+    </div>
+  </div>
+
+  <script src="script_register.js"></script>
+</body>
+</html>
